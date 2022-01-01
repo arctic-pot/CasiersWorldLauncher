@@ -22,8 +22,12 @@ namespace CasiersWorldLauncher
     {
         public MainWindow()
         {
-            WindowStyle = WindowStyle.None;
             InitializeComponent();
+        }
+
+        private void TitleBar_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

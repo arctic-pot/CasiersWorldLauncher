@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CasiersWorldLauncher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Casiers World Launcher" Height="570" Width="975"
+        WindowStyle="None"
+        FontFamily="MiSans"
+        FontSize="14px"
+        Padding="0">
+    <!-- TODO: Embed fonts in the application -->
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="-1" />
+    </WindowChrome.WindowChrome>
+    <DockPanel>
+        <StackPanel Background="#0a78ef" DockPanel.Dock="Top" Orientation="Vertical"
+                    VerticalAlignment="Center">
+            <TextBlock Padding="12px" FontSize="17px" Foreground="White" Background="Transparent" 
+                       MouseLeftButtonDown="TitleBar_OnMouseLeftButtonDown">
+                Casiers World Launcher
+            </TextBlock>
+        </StackPanel>
+        <TextBlock>WIP</TextBlock>
+    </DockPanel>
 </Window>

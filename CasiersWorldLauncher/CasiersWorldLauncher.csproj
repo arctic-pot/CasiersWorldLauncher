@@ -7,4 +7,12 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Remove="MiSans-Regular.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\MiSans-Regular.ttf" />
+    </ItemGroup>
+
 </Project>
